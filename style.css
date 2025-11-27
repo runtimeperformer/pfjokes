@@ -37,7 +37,6 @@ body {
 
 /* image */
 .album {
-  width: 100%;
   max-width: 420px;
   height: auto;
   border: 1px solid #e3e3e3;
