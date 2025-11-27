@@ -12,6 +12,10 @@ html, body {
 
 /* center wrapper */
 .center-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
   text-align: center;
 }
 
@@ -44,4 +48,7 @@ html, body {
 .album:hover {
   transform: scale(1.02);
   box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  width: 100%;
+  max-width: 420px;
+  height: auto;
 }
