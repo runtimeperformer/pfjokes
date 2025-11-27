@@ -36,6 +36,15 @@ html, body {
   opacity: 1;
 }
 
+.tini a {
+  font-size: 0.85rem;   /* ↓ smaller text */
+  opacity: 0.85;
+}
+
+.tini a:hover {
+  opacity: 1;
+}
+
 /* image */
 .album {
   max-width: 420px;   /* keep it small */
