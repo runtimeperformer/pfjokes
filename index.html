@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <title>the machine knows the rules</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css">
   <style>
     html, body {
       margin: 0;
@@ -13,9 +14,36 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     }
 
-    .center-wrap img {
+    .center-wrap {
+      text-align: center;
+      max-width: 480px;
+      padding: 1rem;
+    }
+
+    .poem p {
+      margin-bottom: 2rem;
+      line-height: 1.7;
+      color: #000;
+      white-space: pre-line;
+    }
+
+    .poem a {
+      display: block;
+      margin: 0.6rem 0;
+      text-decoration: none;
+      color: #000;          /* make them non-colored */
+      font-style: italic;
+      transition: opacity 0.2s ease;
+    }
+
+    .poem a:hover {
+      opacity: 0.7;
+    }
+
+    .album-img img {
       width: 100%;
       max-width: 420px;
       height: auto;
@@ -25,7 +53,7 @@
       transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
 
-    .center-wrap img:hover {
+    .album-img img:hover {
       transform: scale(1.02);
       box-shadow: 0 6px 18px rgba(0,0,0,0.12);
     }
@@ -33,42 +61,42 @@
 </head>
 
 <body>
+
   <div class="center-wrap">
-    <p>
-      どこか別の人生で また会いましょう。<br>
-      どこか別の世界で。<br>
-      前世、 来世、 次の時代<br>
-      そっちで会おう<br>
-      二人の日々、 君の言葉。<br>
-      とても愛した そんな私が<br>
-      今はわかる 君を失った これが結末<br>
-      君を忘れないから<br>
-      また会う日まで。<br>
-    </p>
-    <p>
-      <a href="https://soundcloud.com/queenleaf" target="_blank" rel="noopener noreferrer">
-        <i>you can feel the sand between your toes, and the sun on your face</i>
-      </a>
-    </p>
 
-    <p>
+    <div class="poem">
+      <p>
+どこか別の人生で 又会いましょう。
+どこか別の世界で。
+前世、来世、次の時代
+そっちで会おう
+二人の日々、君の言葉。
+とても愛した そんな私が
+今はわかる 君を失った これが結末
+君を忘れないから
+また会う日まで。
+      </p>
+
+      <a href="https://worldvolume.bandcamp.com" target="_blank" rel="noopener noreferrer">
+        you can feel the sand between your toes, and the sun on your face
+      </a>
+
       <a href="https://soundcloud.com/worldvolume" target="_blank" rel="noopener noreferrer">
-        <i>the smell of salt and the sound of waves</i>
+        the smell of salt and the sound of waves
       </a>
-    </p>
 
-    <p>
-      <a href="https://worldvolume.bandcamp.com/album/year" target="_blank" rel="noopener noreferrer">
-        <i>crashing against the shore</i>
+      <a href="https://runtimeperformer.github.io" target="_blank" rel="noopener noreferrer">
+        crashing against the shore
       </a>
-    </p>
-    <a href="https://worldvolume.bandcamp.com/album/exotic-manifold" target="_blank" rel="noopener noreferrer">
-      <img src="EXOTIC_MANIFOLD.png" alt="" />
-    </a>
+    </div>
+
+    <div class="album-img">
+      <a href="https://worldvolume.bandcamp.com/album/exotic-manifold" target="_blank" rel="noopener noreferrer">
+        <img src="EXOTIC_MANIFOLD.png" alt="Exotic Manifold cover" />
+      </a>
+    </div>
+
   </div>
+
 </body>
 </html>
-
-
-
-
