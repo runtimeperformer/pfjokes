@@ -1,0 +1,18 @@
+.pretti {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.pretti a {
+  display: block;
+  color: inherit;      
+  text-decoration: none;
+  font-style: italic;
+  margin: 0.5rem 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease;
+}
+
+.pretti a:hover {
+  opacity: 1;
+}
