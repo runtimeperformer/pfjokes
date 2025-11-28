@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <title>the machine knows the rules</title>
@@ -7,30 +8,42 @@
   <link rel="stylesheet" href="style.css">
 
   <script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const colors = [
-      "#B7975D",
-      "#AFA7D6",
-      "#CFBA28",
-      "#4AD231"
-    ];
+    document.addEventListener("DOMContentLoaded", () => {
+      const colors = [
+        "#B7975D",
+        "#AFA7D6",
+        "#CFBA28",
+        "#4AD231"
+      ];
 
-    let index = 0;
+      const images = [
+        "EXOTIC_MANIFOLD.png",
+        "IMG_5430.JPG",
+        "IMG_5333.JPG",
+      ];
 
-    function cyclez() {
-      document.body.style.backgroundColor = colors[index];
-      index = (index + 1) % colors.length;
-    }
+      const pic = document.getElementById("a_pic")
+      let i = 0, j = 0;
+      
+      function cyclez_bg() {
+        document.body.style.backgroundColor = colors[i];
+        i = (i + 1) % colors.length;
+      }
 
-    cyclez();
-    setInterval(cyclez, 7000);
-  });
+      function cyclez_img() {
+        pic.src = images[j];
+        j = (j + 1) % images.length;
+      }
+      cyclez_bg();
+      cyclez_img();
+      setInterval(cyclez_bg, 7000);
+      setInterval(cyclez_img, 3000);
+    });
   </script>
 </head>
 
 <body>
   <div class="center-wrap">
-
     <div class="pretti">
       <p>
         どこか別の人生で また会いましょう。<br>
@@ -39,24 +52,20 @@
         そっちで会おう。<br>
       </p>
 
-      <a href="https://worldvolume.bandcamp.com/album/exotic-manifold"
-         target="_blank" rel="noopener noreferrer">
-        <img src="EXOTIC_MANIFOLD.png" alt="" class="album" />
+      <a href="https://worldvolume.bandcamp.com/album/exotic-manifold" target="_blank" rel="noopener noreferrer">
+        <img id="a_pic" src="EXOTIC_MANIFOLD.png" alt="" class="album" />
       </a>
 
       <div class="pretti tini">
-        <a href="https://worldvolume.bandcamp.com"
-           target="_blank" rel="noopener noreferrer">
+        <a href="https://worldvolume.bandcamp.com" target="_blank" rel="noopener noreferrer">
           you can feel the sand between your toes, and the sun on your face
         </a>
 
-        <a href="https://soundcloud.com/worldvolume"
-           target="_blank" rel="noopener noreferrer">
+        <a href="https://soundcloud.com/worldvolume" target="_blank" rel="noopener noreferrer">
           the smell of salt and the sound of waves
         </a>
 
-        <a href="https://runtimeperformer.github.io"
-           target="_blank" rel="noopener noreferrer">
+        <a href="https://runtimeperformer.github.io" target="_blank" rel="noopener noreferrer">
           crashing against the shore
         </a>
       </div>
@@ -64,4 +73,5 @@
 
   </div>
 </body>
+
 </html>
