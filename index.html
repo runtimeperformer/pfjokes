@@ -5,15 +5,14 @@
   <title>the machine knows the rules</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="style.css">
+
   <script>
   document.addEventListener("DOMContentLoaded", () => {
     const colors = [
       "#B7975D",
-      //"#208008",
-      //"#D6C479",
       "#AFA7D6",
       "#CFBA28",
-      "#4AD231"    
+      "#4AD231"
     ];
 
     let index = 0;
@@ -22,12 +21,11 @@
       document.body.style.backgroundColor = colors[index];
       index = (index + 1) % colors.length;
     }
+
     cyclez();
     setInterval(cyclez, 7000);
-    /*const randomColor = colors[Math.floor(Math.random() * colors.length)];
-    document.body.style.backgroundColor = randomColor;*/
   });
-</script>
+  </script>
 </head>
 
 <body>
@@ -41,25 +39,29 @@
         そっちで会おう。<br>
       </p>
 
-      <a href="https://worldvolume.bandcamp.com/album/exotic-manifold" target="_blank" rel="noopener noreferrer">
-      <img src="EXOTIC_MANIFOLD.png" alt="" class="album" />
-    </a>
-     <div class="tini">
-    <a href="https://worldvolume.bandcamp.com" target="_blank" rel="noopener noreferrer">
-      you can feel the sand between your toes, and the sun on your face
-    </a>
+      <a href="https://worldvolume.bandcamp.com/album/exotic-manifold"
+         target="_blank" rel="noopener noreferrer">
+        <img src="EXOTIC_MANIFOLD.png" alt="" class="album" />
+      </a>
 
-    <a href="https://soundcloud.com/worldvolume" target="_blank" rel="noopener noreferrer">
-      the smell of salt and the sound of waves
-    </a>
+      <div class="pretti tini">
+        <a href="https://worldvolume.bandcamp.com"
+           target="_blank" rel="noopener noreferrer">
+          you can feel the sand between your toes, and the sun on your face
+        </a>
 
-    <a href="https://runtimeperformer.github.io" target="_blank" rel="noopener noreferrer">
-      crashing against the shore
-    </a>
-  </div>
+        <a href="https://soundcloud.com/worldvolume"
+           target="_blank" rel="noopener noreferrer">
+          the smell of salt and the sound of waves
+        </a>
+
+        <a href="https://runtimeperformer.github.io"
+           target="_blank" rel="noopener noreferrer">
+          crashing against the shore
+        </a>
+      </div>
     </div>
+
   </div>
 </body>
 </html>
-
-
