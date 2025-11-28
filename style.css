@@ -1,10 +1,10 @@
-/* page layout */
 html, body {
   margin: 0;
   padding: 0;
   height: 100%;
   /*background: #fafafa;*/
-  background: dcf3db;
+  /*background: #B7975D;*/
+  color: #2B0F01;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -18,11 +18,10 @@ html, body {
   align-items: center;
   text-align: center;
 
-  max-width: 420px;   /* prevents giant images */
+  max-width: 420px;
   width: 100%;
 }
 
-/* link lines */
 .pretti a {
   display: block;
   color: inherit;
@@ -38,7 +37,7 @@ html, body {
 }
 
 .tini a {
-  font-size: 0.85rem;   /* ↓ smaller text */
+  font-size: 0.85rem;
   opacity: 0.85;
 }
 
@@ -46,13 +45,12 @@ html, body {
   opacity: 1;
 }
 
-/* image */
 .album {
-  max-width: 420px;   /* keep it small */
-  width: auto;        /* do not stretch */
+  max-width: 420px;
+  width: auto;
   height: auto;
 
-  border: 1px solid #e3e3e3;
+  border: 1px solid #B7975D;
   border-radius: 6px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
