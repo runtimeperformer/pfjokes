@@ -5,6 +5,29 @@
   <title>the machine knows the rules</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="style.css">
+  <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const colors = [
+      "#B7975D",
+      "#208008",
+      //"#D6C479",
+      //"#AFA7D6",
+      "#CFBA28",
+      "#4AD231"    
+    ];
+
+    let index = 0;
+
+    function cyclez() {
+      document.body.style.backgroundColor = colors[index];
+      index = (index + 1) % colors.length;
+    }
+    cyclez();
+    setInterval(cyclez, 3000);
+    /*const randomColor = colors[Math.floor(Math.random() * colors.length)];
+    document.body.style.backgroundColor = randomColor;*/
+  });
+</script>
 </head>
 
 <body>
@@ -14,8 +37,8 @@
       <p>
         どこか別の人生で また会いましょう。<br>
         どこか別の世界で。<br>
-        前世、 来世、 次の時代<br>
-        そっちで会おう<br>
+        前世、 来世、 次の時代。<br>
+        そっちで会おう。<br>
       </p>
 
       <a href="https://worldvolume.bandcamp.com/album/exotic-manifold" target="_blank" rel="noopener noreferrer">
@@ -35,14 +58,6 @@
     </a>
   </div>
     </div>
-
-    
-
   </div>
 </body>
 </html>
-
-
-
-
-
