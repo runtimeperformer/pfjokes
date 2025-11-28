@@ -2,8 +2,6 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
-  /*background: #fafafa;*/
-  /*background: #B7975D;*/
   color: #2B0F01;
   display: flex;
   align-items: center;
@@ -11,12 +9,14 @@ html, body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
-/* center wrapper */
 .center-wrap {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+
+  padding: 1.5rem;
+  box-sizing: border-box;
 
   max-width: 420px;
   width: 100%;
@@ -36,18 +36,13 @@ html, body {
   opacity: 1;
 }
 
-.tini a {
-  font-size: 0.85rem;
-  opacity: 0.85;
-}
-
-.tini a:hover {
-  opacity: 1;
+.pretti.tini a {
+  font-size: 0.79rem;
 }
 
 .album {
+  width: 100%;
   max-width: 420px;
-  width: auto;
   height: auto;
 
   border: 1px solid #B7975D;
@@ -59,4 +54,14 @@ html, body {
 .album:hover {
   transform: scale(1.02);
   box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+/*mobile*/
+@media (max-width: 480px) {
+  .pretti a {
+    font-size: 0.9rem;
+  }
+  .pretti.tini a {
+    font-size: 0.75rem;
+  }
 }
