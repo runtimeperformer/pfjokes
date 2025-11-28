@@ -3,7 +3,8 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
-  background: #fafafa;
+  /*background: #fafafa;*/
+  background: dcf3db;
   display: flex;
   align-items: center;
   justify-content: center;
