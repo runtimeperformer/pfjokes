@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>the machine knows the rules</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css">
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const colors = [
+        "#B7975D",
+        "#AFA7D6",
+        "#CFBA28",
+        "#4AD231"
+      ];
+      let i = 0
+      function cyclez_bg() {
+        document.body.style.backgroundColor = colors[i];
+        i = (i + 1) % colors.length;
+      }
+      cyclez_bg();
+      setInterval(cyclez_bg, 7000);
+    });
+  </script>
+</head>
+
+<body>
+  <div class="center-wrap">
+    <div class="pretti">
+      <p>
+        何度だって。<br>
+        海の家に。<br>
+        僕らは帰る。<br>
+        笑うように。<br>
+        ね、分かった。<br>
+        <a href="/">きっと、きっと、いつか。</a><br>
+      </p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
