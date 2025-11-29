@@ -9,13 +9,10 @@ document.addEventListener("DOMContentLoaded", () => {
       const images = [
         "images/EXOTIC_MANIFOLD.png",
         "images/IMG_5430.JPG",
-        //"images/IMG_5333.JPG",
         "images/IMG_6089.jpeg",
         "images/IMG_5296.png",
-        //"images/IMG_3831.png",
         "images/IMG_2816.png",
         "images/IMG_0489.png",
-        //"images/IMG_0046.png",
       ];
 
       const pic = document.getElementById("a_pic")
