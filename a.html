@@ -6,24 +6,7 @@
   <title>the machine knows the rules</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="style.css">
-
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const colors = [
-        "#B7975D",
-        "#AFA7D6",
-        "#CFBA28",
-        "#4AD231"
-      ];
-      let i = 0
-      function cyclez_bg() {
-        document.body.style.backgroundColor = colors[i];
-        i = (i + 1) % colors.length;
-      }
-      cyclez_bg();
-      setInterval(cyclez_bg, 7000);
-    });
-  </script>
+  <script src="cyclez.js"></script>
 </head>
 
 <body>
@@ -39,6 +22,5 @@
       </p>
       </div>
     </div>
-  </div>
 </body>
 </html>
