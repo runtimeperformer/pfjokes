@@ -25,10 +25,6 @@ html, body {
   margin: 0 auto;
 }
 
-.container p {
-  overflow-wrap: break-word;
-}
-
 .pretti a {
   display: block;
   color: inherit;
@@ -63,6 +59,20 @@ html, body {
 .album:hover {
   transform: scale(1.02);
   box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+p {
+  overflow-wrap: break-word;
+}
+
+.lefty {
+  text-align: left;
 }
 
 /* mobile tweaks */
