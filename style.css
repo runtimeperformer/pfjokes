@@ -4,6 +4,10 @@ html, body {
   color: #2B0F01;
 }
 
+a:hover {
+  color: #C11418
+}
+
 .centered-page {
   min-height: 100vh;
   display: flex;
@@ -37,6 +41,7 @@ html, body {
 
 .pretti a:hover {
   opacity: 1;
+  color: #C11418
 }
 
 .pretti.tini a {
