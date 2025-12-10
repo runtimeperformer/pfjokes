@@ -7,12 +7,12 @@ document.addEventListener("DOMContentLoaded", () => {
       ];
 
       const images = [
-        "images/EXOTIC_MANIFOLD.png",
-        "images/IMG_5430.JPG",
-        "images/IMG_6089.jpeg",
-        "images/IMG_5296.png",
-        "images/IMG_2816.png",
-        "images/IMG_0489.png",
+        "images/EXOTIC_MANIFOLD.webp",
+        "images/5430.webp",
+        "images/6089.webp",
+        "images/5296.webp",
+        "images/2816.webp",
+        "images/0489.webp",
       ];
 
       const pic = document.getElementById("a_pic")
