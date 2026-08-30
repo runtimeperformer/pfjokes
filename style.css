@@ -42,6 +42,20 @@ a:hover {
   margin: 0 auto;
 }
 
+.container2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+
+  /*padding: 0rem;*/
+  box-sizing: border-box;
+
+  max-width: 420px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 .pretti a {
   display: block;
   color: inherit;
